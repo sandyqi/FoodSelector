@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="06/01/2014"
+        android:textColor="#CCFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/date"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/confirm_button"
+        android:layout_alignBottom="@+id/confirm_button"
+        android:layout_marginLeft="87dp"
+        android:layout_toRightOf="@+id/confirm_button"
+        android:text="Confirm" />
+
+    <ImageView
+        android:id="@+id/backg"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/confirm_button"
+        android:layout_alignRight="@+id/edit_button"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="56dp" />
+
+    <EditText
+        android:id="@+id/editnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:background="#CCCCCC"
+        android:textColor="#FFCC44"
+        android:textSize="28sp"
+        android:visibility="invisible" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#FFCC44"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="xx"
+        android:textColor="#FFCC44"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editfoodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="#CCCCCC"
+        android:minEms="10"
+        android:text=""
+        android:textColor="#FFCC44"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

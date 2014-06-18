@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhatToEat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="example">Yummyyyyyyyyyyyyyyyyyy. I like itttttttttttttttttttttttttttt. wowwwwwwwwwwwwww</string>
+    <string-array name="food_title">
+        <item 
+            >Cheese Burger</item>
+        <item 
+            >Chinese Food</item>
+        <item
+            >Italian Sausage</item>
+        <item 
+            >Italian Soup</item>
+        <item 
+            >Lobsters</item>
+        <item 
+            >Ribs</item>
+        <item 
+            >Roasted Chicken</item>
+        <item 
+            >Spegetti</item>
+        <item 
+            >Steak</item>
+        <item 
+            >Thai Curry</item>  
+    </string-array>
+    
+    
+    <string-array name="food_body">
+        <item 
+            >A cheeseburger is a hamburger topped with cheese.ns in structure, ingredients, and composition.   </item>
+    	<item 
+    	    >Chinese cuisine includes styles originating from the diverse regions of China, as well as from Chinese people in other parts of the world. The history of Chinese cuisine in China stretches back for thousands of years and has changed from period to period and in each region according to climate, imperial fashions, and local preferences. </item>
+    	<item 
+    	    >Italian sausage most often refers to a style of pork sausage noted for being seasoned with fennel and anise as the primary seasoning. </item>
+    	<item 
+    	    >Wedding soup or Italian wedding soup is an Italian-American[1] soup consisting of green vegetables and meat. It is popular in the United States, where it is a staple in many Italian restaurants.</item>
+    	<item 
+    	    >Cooks boil or steam live lobsters. The lobster cooks for seven minutes for the first pound and three minutes for each additional pound.[22]</item>
+    	<item 
+    	    >Pork ribs are a cut of pork popular in North American and Asian cuisines. The ribcage of a domestic pig, meat and bones together, is cut into usable pieces, prepared by smoking, grilling, or baking – usually with a sauce, often barbecue – and then served.</item>
+    	<item 
+    	    >For roasting, the food may be placed on a rack, in a roasting pan or, to ensure even application of heat, may be rotated on a spit or rotisserie.[2] If a pan is used, the juice can be retained for use in gravy, Yorkshire pudding, etc. During oven roasting, hot air circulates around the meat, cooking all sides evenly.  </item>
+    	<item 
+    	    >Spaghetti is a long, thin, cylindrical pasta of Italian origin. with other kinds of flour. Traditionally, most spaghetti was 50 cm (20 in) long, but shorter lengths gained in popularity during the latter half of the 20th century and now spaghetti is most commonly available in 25–30 cm (10–12 in) lengths.</item>
+    	<item 
+    	    >A steak (from Old Norse steik, "roastbeef") is gef fish cut perpendiculroiled, while fish steaks may also be baked. Steak can also be meat cooked in sauce, such as steak and kidney pie, or minced meat formed into a steak shape, such as Salisbury steak and hamburger steak. Without qualification, the word "steak" generally refers to beefsteak.</item>
+    	<item 
+    	    >Thai curry refers to dishes in Thai cuisine that are made with variouss themselves. A Thai curry dish is made from curry paste, coconut milk or water, meat, seafood, vegetables or fruit, and herbs. Curries in Thailand mainly differ from the curries in Indian cuisine in their use of fresh ingredients such as herbs and aromatic leaves over a mix of spices</item>
+    </string-array>
+    <string name="origintime">long long ago</string>
+
+</resources>
