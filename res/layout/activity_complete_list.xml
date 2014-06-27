@@ -2,83 +2,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000" >
+    android:background="#000000"
+    android:padding="20dp" >
 
-    <ListView
-        android:id="@+id/list"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/add"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/text" >
-<requestFocus/>
-    </ListView>
+        android:layout_height="match_parent"
+        android:background="@drawable/b10" >
 
-    <Button
-        android:id="@+id/add"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="16dp"
-        android:textSize="25dp"
-        android:text="Add" />
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text" >
 
-    <Button
-        android:id="@+id/confirm"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp"
-        android:textSize="25dp"
-        android:text="Clear" />
+            <requestFocus />
+        </ListView>
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        <Button
+            android:id="@+id/add"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/custombutton"
+            android:text=""
+            android:textSize="25dp" />
 
-        android:paddingTop="5dp"
-        android:text="My Private Food Gallery"
-        android:textColor="#FF9933"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:typeface="serif" />
+        <Button
+            android:id="@+id/confirm"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/t3"
+            android:text=""
+            android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/confirm"
-        android:layout_marginRight="22dp"
-        android:src="@drawable/a18" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:text="Hungry Now..."
+            android:textColor="#FF9933"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
-    <TextView
-        android:id="@+id/count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/list"
-        android:layout_alignLeft="@+id/add"
-        android:layout_marginLeft="20dp"
-        android:text="0"
-        android:textColor="#FF9933"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/list"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:textColor="#FF9933"
+            android:textSize="50sp"
+            android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/imagebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/a19" />
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle" >
+
+            <ImageButton
+                android:id="@+id/handle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/smallbutton1"
+                android:text="" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CheckBox" />
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
 
 </RelativeLayout>

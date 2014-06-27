@@ -12,6 +12,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Base64;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,16 +71,18 @@ public class test2 extends BaseAdapter{
 		}
 		String[] aa  = mList.get(position);          //convert string into drawable
 		viewHolder.mTVItem.setText(aa[0]);
-		Bitmap bp = decodeBase64(aa[1]);
-		Drawable drawable = new BitmapDrawable(res,bp);
-		viewHolder.i.setBackgroundDrawable(drawable);
+		try{
+			Bitmap bp =BitmapFactory.decodeFile(aa[1]);
+			Drawable draw = new BitmapDrawable(res, bp);
+			viewHolder.i.setBackgroundDrawable(draw);
+			}catch(Exception e){
+						e.printStackTrace();
+						Log.i("test 2 class", "cannot set image into list");
+					}
 	//	viewHolder.i.setAlpha(Integer.parseInt(mList.get(position)));
 		return v;
 	}
-	public static Bitmap decodeBase64(String input){
-		byte[] decodedByte = Base64.decode(input, 0);
-		return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
-	}
+	
 	
 	class CompleteListViewHolder{
 		public TextView mTVItem;

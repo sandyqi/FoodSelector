@@ -1,6 +1,7 @@
 package com.whattoeat.database;
 
 import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import android.content.ContentValues;
@@ -32,7 +33,7 @@ public class dbAdapter {
 	public void close(){
 		helper.close();
 	}
-	public long insertMessage(String title, String body,byte[] photo){
+	public long insertMessage(String title, String body,String photo){
 		ContentValues values = new ContentValues();
 		values.put(KEY_TITLE, title);
 		values.put(KEY_BODY, body);
@@ -42,7 +43,10 @@ public class dbAdapter {
 		return database.insert(DATABASE_TABLE, null, values);
 	}
 	public String getCreateTime(){
-		String text = DateFormat.getDateTimeInstance().format(new Date());
+		Calendar rightNow = Calendar.getInstance();
+		String text = "Created time: "+rightNow.get(Calendar.MONTH)+"/ "+
+		rightNow.get(Calendar.DAY_OF_MONTH)+"   "+rightNow.get(Calendar.HOUR_OF_DAY)+": "+
+		rightNow.get(Calendar.MINUTE)+": "+rightNow.get(Calendar.SECOND);
 		return text;
 	}
 	public boolean deleteMessage(long id){
@@ -62,7 +66,7 @@ public class dbAdapter {
 			}
 			return list;
 	}
-	public boolean update(long id,String title,String body, byte[] photo){
+	public boolean update(long id,String title,String body, String photo){
 		ContentValues values=new ContentValues();
 		values.put(KEY_TITLE, title);
 		values.put(KEY_BODY, body);
